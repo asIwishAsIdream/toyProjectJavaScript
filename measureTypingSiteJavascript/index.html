@@ -1,0 +1,36 @@
+<!-- html은 js와 css 파일을 브라우저에 붙여주는 접착제이다  ! 하면 기본 구조가 생김-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Typing!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>타이핑 연습!</h1>
+    </div>
+    <div class="word-display">
+      Hello
+    </div>
+    <div>
+      <input type="text" class="word-input">
+    </div>
+    <div class="game-info">
+      <div>
+        남은 시간 : <span class="time">0</span>
+      </div>
+      <div>
+        획득 점수 : <span class="score">0</span>
+      </div>
+    </div>
+    <div class="speed-info">
+      타수 : <span class="speed">0</span>
+    </div>
+    <button class="button loading" onclick="run()">게임을 불러오는중...</button>
+    <script src="main.js"></script>
+  </body>
+</html>
